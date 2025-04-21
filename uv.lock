@@ -288,8 +288,8 @@ requires-dist = [
     { name = "delta-spark", specifier = ">=3.3.0" },
     { name = "deltalake", specifier = ">=0.25.5" },
     { name = "jupyterlab", specifier = ">=4.4.0" },
-    { name = "py4j", specifier = "==0.10.9.7" },
-    { name = "pyspark", specifier = "==3.5.5" },
+    { name = "py4j", specifier = ">=0.10.9.7" },
+    { name = "pyspark", specifier = ">=3.5.5" },
 ]
 
 [[package]]
