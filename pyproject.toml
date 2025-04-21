@@ -1,0 +1,12 @@
+[project]
+name = "eg-dados-apache-spark"
+version = "0.1.0"
+description = "Trabalho sobre Engenharia de Dados com Apache Spark - Delta Lake e Apache Iceberg"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "delta-spark>=3.3.0",
+    "deltalake>=0.25.5",
+    "py4j==0.10.9.7",
+    "pyspark==3.5.5",
+]
