@@ -8,6 +8,6 @@ dependencies = [
     "delta-spark>=3.3.0",
     "deltalake>=0.25.5",
     "jupyterlab>=4.4.0",
-    "py4j==0.10.9.7",
-    "pyspark==3.5.5",
+    "py4j>=0.10.9.7",
+    "pyspark>=3.5.5",
 ]
