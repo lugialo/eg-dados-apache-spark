@@ -25,16 +25,24 @@ cd eg-dados-apache-spark
 
 ## 2. Configurando o ambiente Python
 
-No Windows, abrir o PowerShell e executar o comando abaixo:
+No Linux, abrir o Terminal e executar o comando abaixo para instalar o UV (caso não tenha):
 
 ```bash
-iwr https://astral.sh/uv/install.ps1 -useb | iex
+curl -LsSf https://astral.sh/uv/install.sh | sh
+# caso você não tenha o curl instalado, pode usar o wget pra instalar também:
+wget -qO- https://astral.sh/uv/install.sh | sh
 ```
 
-## 3. Ativando o ambiente
+## 3. Crie o ambiente com o venv
 
 ```bash
 uv venv
+```
+
+## 4. Acesse o ambiente
+
+```bash
+source .venv/bin/activate
 ```
 
 ## 4. Instalando as dependencias
