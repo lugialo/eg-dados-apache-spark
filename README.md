@@ -62,8 +62,8 @@ jupyter-lab
 ```
 eg-dados-apache-spark/
 ├── notebooks/
-├── delta-lake.ipynb
-├── pyspark-iceberg.ipynb
+    ├── delta-lake.ipynb
+    ├── pyspark-iceberg.ipynb
 ├── data/covid-19/vaccinations.csv
 ├── pyproject.toml
 └── README.md
