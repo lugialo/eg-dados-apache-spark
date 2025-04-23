@@ -1,0 +1,37 @@
+site_name: 'Apache Spark com Delta Lake e Apache Iceberg'
+theme:
+  name: 'material'
+  language: pt-BR
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.instant
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - search.share
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - footnotes
+  - md_in_html
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+nav:
+  - Home: index.md
+  - Instalação:
+      - Ambiente: instalacao.md
+      - Uso: uso.md
+  - Delta Lake: delta_lake.md
+  - Apache Iceberg: iceberg.md
+  - Exemplos: exemplos.md
+  - Referências: referencias.md
