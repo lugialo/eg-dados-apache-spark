@@ -54,7 +54,7 @@ uv pip install .
 ## 5. Iniciando o Jupyter Lab
 
 ```bash
-jupyter lab
+jupyter-lab
 ```
 
 ## 6. Estrutura do Projeto
