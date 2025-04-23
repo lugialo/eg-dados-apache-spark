@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
@@ -358,6 +358,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#1-clonando-o-repositorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Clonando o repositório
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-configurando-o-ambiente-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Configurando o ambiente Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-crie-o-ambiente-com-o-venv" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Crie o ambiente com o venv
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-acesse-o-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Acesse o ambiente
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-instalando-as-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Instalando as dependencias
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-iniciando-o-jupyter-lab" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Iniciando o Jupyter Lab
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -529,6 +583,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#1-clonando-o-repositorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Clonando o repositório
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-configurando-o-ambiente-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Configurando o ambiente Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-crie-o-ambiente-com-o-venv" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Crie o ambiente com o venv
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-acesse-o-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Acesse o ambiente
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-instalando-as-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Instalando as dependencias
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-iniciando-o-jupyter-lab" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Iniciando o Jupyter Lab
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -553,41 +661,28 @@
 <li>UV (gerenciador de pacotes)</li>
 </ul>
 <h2 id="passo-a-passo">Passo a Passo<a class="headerlink" href="#passo-a-passo" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Clone o repositório:</li>
-</ol>
-<p><code>bash
-   git clone https://github.com/lugialo/eg-dados-apache-spark.git
-   cd eg-dados-apache-spark</code></p>
-<ol>
-<li>Instale o UV:</li>
-</ol>
-<p><code>bash
-   curl -LsSf https://astral.sh/uv/install.sh | sh</code></p>
-<p>Ou, se preferir instalar via pip:</p>
-<p><code>bash
-   pip install uv</code></p>
-<ol>
-<li>Inicialize o projeto com o UV:</li>
-</ol>
-<p><code>bash
-   uv init</code></p>
-<ol>
-<li>Adicione as dependências necessárias:</li>
-</ol>
-<p><code>bash
-   uv add pyspark delta-spark iceberg-spark</code></p>
-<ol>
-<li>Crie e ative o ambiente virtual:</li>
-</ol>
-<p><code>bash
-   uv venv
-   source .venv/bin/activate  # No Windows: .venv\Scripts\activate</code></p>
-<ol>
-<li>Inicie o Jupyter Labs:</li>
-</ol>
-<p><code>bash
-   jupyter-lab</code></p>
+<h2 id="1-clonando-o-repositorio">1. Clonando o repositório<a class="headerlink" href="#1-clonando-o-repositorio" title="Permanent link">&para;</a></h2>
+<pre><code class="language-bash">git clone https://github.com/lugialo/eg-dados-apache-spark.git
+cd eg-dados-apache-spark
+</code></pre>
+<h2 id="2-configurando-o-ambiente-python">2. Configurando o ambiente Python<a class="headerlink" href="#2-configurando-o-ambiente-python" title="Permanent link">&para;</a></h2>
+<p>No Linux, abrir o Terminal e executar o comando abaixo para instalar o UV (caso não tenha):</p>
+<pre><code class="language-bash">curl -LsSf https://astral.sh/uv/install.sh | sh
+# caso você não tenha o curl instalado, pode usar o wget pra instalar também:
+wget -qO- https://astral.sh/uv/install.sh | sh
+</code></pre>
+<h2 id="3-crie-o-ambiente-com-o-venv">3. Crie o ambiente com o venv<a class="headerlink" href="#3-crie-o-ambiente-com-o-venv" title="Permanent link">&para;</a></h2>
+<pre><code class="language-bash">uv venv
+</code></pre>
+<h2 id="4-acesse-o-ambiente">4. Acesse o ambiente<a class="headerlink" href="#4-acesse-o-ambiente" title="Permanent link">&para;</a></h2>
+<pre><code class="language-bash">source .venv/bin/activate
+</code></pre>
+<h2 id="4-instalando-as-dependencias">4. Instalando as dependencias<a class="headerlink" href="#4-instalando-as-dependencias" title="Permanent link">&para;</a></h2>
+<pre><code class="language-bash">uv pip install .
+</code></pre>
+<h2 id="5-iniciando-o-jupyter-lab">5. Iniciando o Jupyter Lab<a class="headerlink" href="#5-iniciando-o-jupyter-lab" title="Permanent link">&para;</a></h2>
+<pre><code class="language-bash">jupyter lab
+</code></pre>
 <p>Agora, você pode executar os notebooks <code>delta-lake.ipynb</code> e <code>pyspark-iceberg.ipynb</code> para testar as implementações.</p>
 
 
