@@ -34,16 +34,22 @@ iwr https://astral.sh/uv/install.ps1 -useb | iex
 ## 3. Ativando o ambiente
 
 ```bash
-poetry shell
+uv venv
 ```
 
-## 4. Iniciando o Jupyter Lab
+## 4. Instalando as dependencias
+
+```bash
+uv pip install .
+```
+
+## 5. Iniciando o Jupyter Lab
 
 ```bash
 jupyter lab
 ```
 
-## 5. Estrutura do Projeto
+## 6. Estrutura do Projeto
 
 ```
 eg-dados-apache-spark/
